@@ -1,0 +1,275 @@
+@use 'atoms';
+@use 'molecules';
+@use 'organisms';
+@use 'variables';
+
+div.page-wrapper { 
+
+	#zen-intro { 
+
+		header { 
+
+			h1 { 
+
+			}
+
+			h2 { 
+
+				abbr { 
+
+				}
+			}
+		}
+
+		#zen-summary { 
+
+			p { 
+
+				abbr { 
+
+				}
+			}
+		}
+
+		#zen-preamble { 
+
+			h3 { 
+
+			}
+
+			p { 
+
+				abbr { 
+
+				}
+			}
+		}
+	}
+
+	#zen-supporting { 
+
+		#zen-explanation { 
+
+			h3 { 
+
+			}
+
+			p { 
+
+				abbr { 
+
+				}
+			}
+		}
+
+		#zen-participation { 
+
+			h3 { 
+
+			}
+
+			p { 
+
+				abbr { 
+
+				}
+
+				a { 
+
+					abbr { 
+
+					}
+				}
+			}
+		}
+
+		#zen-benefits { 
+
+			h3 { 
+
+			}
+
+			p { 
+
+				abbr { 
+
+				}
+			}
+		}
+
+		#zen-requirements { 
+
+			h3 { 
+
+			}
+
+			p { 
+
+				abbr { 
+
+				}
+			}
+		}
+
+		footer { 
+
+			a.zen-validate-html { 
+
+			}
+
+			a.zen-validate-css { 
+
+			}
+
+			a.zen-license { 
+
+			}
+
+			a.zen-accessibility { 
+
+			}
+
+			a.zen-github { 
+
+			}
+		}
+	}
+
+	aside.sidebar { 
+
+		div.wrapper { 
+
+			#design-selection { 
+
+				h3.select { 
+
+				}
+
+				nav { 
+
+					ul { 
+
+						li { 
+
+							a.design-name { 
+
+							}
+
+							a.designer-name { 
+
+							}
+						}
+					}
+				}
+			}
+
+			#design-archives { 
+
+				h3.archives { 
+
+				}
+
+				nav { 
+
+					ul { 
+
+						li.next { 
+
+							a { 
+
+								span.indicator { 
+
+								}
+							}
+						}
+
+						li.viewall { 
+
+							a { 
+
+							}
+						}
+					}
+				}
+			}
+
+			#zen-resources { 
+
+				h3.resources { 
+
+				}
+
+				ul { 
+
+					li.view-css { 
+
+						a { 
+
+							abbr { 
+
+							}
+						}
+					}
+
+					li.css-resources { 
+
+						a { 
+
+							abbr { 
+
+							}
+						}
+					}
+
+					li.zen-faq { 
+
+						a { 
+
+							abbr { 
+
+							}
+						}
+					}
+
+					li.zen-submit { 
+
+						a { 
+
+						}
+					}
+
+					li.zen-translations { 
+
+						a { 
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+div.extra1 { 
+
+}
+
+div.extra2 { 
+
+}
+
+div.extra3 { 
+
+}
+
+div.extra4 { 
+
+}
+
+div.extra5 { 
+
+}
+
+div.extra6 { 
+
+}
