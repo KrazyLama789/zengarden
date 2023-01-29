@@ -3,41 +3,81 @@
 @use 'organisms';
 @use 'variables';
 
-div.page-wrapper { 
+body {
 
-	#zen-intro { 
+	
+} 
 
-		header { 
+#zen-intro { 
 
-			h1 { 
+	header { 
 
-			}
+		h1 { 
 
-			h2 { 
-
-				abbr { 
-
-				}
-			}
 		}
 
-		#zen-summary { 
+		h2 { 
 
-			p { 
+			abbr { 
 
-				abbr { 
-
-				}
 			}
 		}
+	}
 
-		#zen-preamble { 
+	#zen-summary { 
 
-			h3 { 
+		p { 
+
+			abbr { 
+
+			}
+		}
+	}
+
+	#zen-preamble { 
+
+		h3 { 
+
+		}
+
+		p { 
+
+			abbr { 
+
+			}
+		}
+	}
+}
+
+#zen-supporting { 
+
+	#zen-explanation { 
+
+		h3 { 
+
+		}
+
+		p { 
+
+			abbr { 
+
+			}
+		}
+	}
+
+	#zen-participation { 
+
+		h3 { 
+
+		}
+
+		p { 
+
+			abbr { 
 
 			}
 
-			p { 
+			a { 
 
 				abbr { 
 
@@ -46,209 +86,172 @@ div.page-wrapper {
 		}
 	}
 
-	#zen-supporting { 
+	#zen-benefits { 
 
-		#zen-explanation { 
+		h3 { 
 
-			h3 { 
-
-			}
-
-			p { 
-
-				abbr { 
-
-				}
-			}
 		}
 
-		#zen-participation { 
+		p { 
 
-			h3 { 
-
-			}
-
-			p { 
-
-				abbr { 
-
-				}
-
-				a { 
-
-					abbr { 
-
-					}
-				}
-			}
-		}
-
-		#zen-benefits { 
-
-			h3 { 
-
-			}
-
-			p { 
-
-				abbr { 
-
-				}
-			}
-		}
-
-		#zen-requirements { 
-
-			h3 { 
-
-			}
-
-			p { 
-
-				abbr { 
-
-				}
-			}
-		}
-
-		footer { 
-
-			a.zen-validate-html { 
-
-			}
-
-			a.zen-validate-css { 
-
-			}
-
-			a.zen-license { 
-
-			}
-
-			a.zen-accessibility { 
-
-			}
-
-			a.zen-github { 
+			abbr { 
 
 			}
 		}
 	}
 
-	aside.sidebar { 
+	#zen-requirements { 
 
-		div.wrapper { 
+		h3 { 
 
-			#design-selection { 
+		}
 
-				h3.select { 
+		p { 
 
-				}
+			abbr { 
 
-				nav { 
+			}
+		}
+	}
 
-					ul { 
+	footer { 
 
-						li { 
+		a.zen-validate-html { 
 
-							a.design-name { 
+		}
 
-							}
+		a.zen-validate-css { 
 
-							a.designer-name { 
+		}
 
-							}
-						}
-					}
-				}
+		a.zen-license { 
+
+		}
+
+		a.zen-accessibility { 
+
+		}
+
+		a.zen-github { 
+
+		}
+	}
+}
+
+aside.sidebar { 
+
+	div.wrapper { 
+
+		#design-selection { 
+
+			h3.select { 
+
 			}
 
-			#design-archives { 
-
-				h3.archives { 
-
-				}
-
-				nav { 
-
-					ul { 
-
-						li.next { 
-
-							a { 
-
-								span.indicator { 
-
-								}
-							}
-						}
-
-						li.viewall { 
-
-							a { 
-
-							}
-						}
-					}
-				}
-			}
-
-			#zen-resources { 
-
-				h3.resources { 
-
-				}
+			nav { 
 
 				ul { 
 
-					li.view-css { 
+					li { 
+
+						a.design-name { 
+
+						}
+
+						a.designer-name { 
+
+						}
+					}
+				}
+			}
+		}
+
+		#design-archives { 
+
+			h3.archives { 
+
+			}
+
+			nav { 
+
+				ul { 
+
+					li.next { 
 
 						a { 
 
-							abbr { 
+							span.indicator { 
 
 							}
 						}
 					}
 
-					li.css-resources { 
-
-						a { 
-
-							abbr { 
-
-							}
-						}
-					}
-
-					li.zen-faq { 
-
-						a { 
-
-							abbr { 
-
-							}
-						}
-					}
-
-					li.zen-submit { 
+					li.viewall { 
 
 						a { 
 
 						}
 					}
+				}
+			}
+		}
 
-					li.zen-translations { 
+		#zen-resources { 
 
-						a { 
+			h3.resources { 
+
+			}
+
+			ul { 
+
+				li.view-css { 
+
+					a { 
+
+						abbr { 
 
 						}
+					}
+				}
+
+				li.css-resources { 
+
+					a { 
+
+						abbr { 
+
+						}
+					}
+				}
+
+				li.zen-faq { 
+
+					a { 
+
+						abbr { 
+
+						}
+					}
+				}
+
+				li.zen-submit { 
+
+					a { 
+
+					}
+				}
+
+				li.zen-translations { 
+
+					a { 
+
 					}
 				}
 			}
 		}
 	}
 }
+
 
 div.extra1 { 
 
