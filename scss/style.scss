@@ -3,6 +3,21 @@
 @use 'organisms';
 @use 'variables';
 
+// Mixins
+@import url("https://use.typekit.net/pir7ghc.css");
+
+@mixin primaryFont {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin secondaryFont {
+    font-family: "adelle", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*
 body {
 
 	
@@ -276,3 +291,4 @@ div.extra5 {
 div.extra6 { 
 
 }
+*/
