@@ -1,7 +1,7 @@
-@use 'atoms';
-@use 'molecules';
-@use 'organisms';
-@use 'variables';
+@use 'scss/atoms';
+@use 'scss/molecules';
+@use 'scss/organisms';
+@use 'scss/variables';
 
 // Mixins
 @import url("https://use.typekit.net/pir7ghc.css");
@@ -22,7 +22,7 @@
 
     .page-wrapper {
         display: grid;
-        grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
         grid-template-rows: auto;
     }
 
