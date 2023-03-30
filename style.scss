@@ -243,3 +243,16 @@ nav ul li,
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+/*========ACCESSIBILITY FOR SMALL VIEWS========*/
+
+header, .summary {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.summary {
+    color: variables.$white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

@@ -11,7 +11,7 @@ body {
 }
 .page-wrapper h3 {
   z-index: 2;
-  background-color: black;
+  background-color: #0F0637;
   color: white;
   padding: 2%;
   text-align: center;
@@ -38,7 +38,7 @@ body {
 
 footer {
   z-index: 2;
-  background-color: black;
+  background-color: #0F0637;
   color: white;
   padding: 2%;
   text-align: center;
@@ -64,7 +64,7 @@ footer {
   .intro [role=banner] {
     grid-column: 2/7;
     background-color: white;
-    color: black;
+    color: #0F0637;
     padding: 2% 42% 2% 5%;
     margin-left: -5%;
     grid-row: 1/2;
@@ -74,7 +74,7 @@ footer {
     grid-row: 2/3;
     text-align: right;
     z-index: 2;
-    background-color: black;
+    background-color: #0F0637;
     color: white;
     padding: 2%;
     grid-column: 1/6;
@@ -85,7 +85,7 @@ footer {
     grid-row: 3/4;
     grid-column: 2/7;
     background-color: white;
-    color: black;
+    color: #0F0637;
     padding: 2% 42% 2% 5%;
     margin-left: -5%;
     text-align: right;
@@ -107,22 +107,17 @@ footer {
   .main [role=article]:not(#zen-summary) {
     grid-column: 2/7;
     background-color: white;
-    color: black;
+    color: #0F0637;
     padding: 2% 42% 2% 5%;
     margin-left: -5%;
     text-align: right;
   }
   .main [role=article]:not(#zen-summary) h3 {
     z-index: 2;
-    background-color: black;
+    background-color: #0F0637;
     color: white;
     padding: 2%;
     margin-left: -100%;
-<<<<<<< HEAD
-    background-color: #0F0637;
-=======
-    text-align: right;
->>>>>>> 7a0489d54ac50258b14b975b0f56fea8eb9dd736
   }
   footer {
     display: flex;
@@ -162,23 +157,42 @@ footer,
 }
 
 /*========TYPOGRAPHY========*/
-h1, h2, h3, footer a {
+h1,
+h2,
+h3,
+footer a {
   font-family: "futura-pt", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-h1, .select, .archives, .resources {
+h1,
+.select,
+.archives,
+.resources {
   font-weight: bold;
 }
 
-p, li {
+p,
+li {
   font-family: "adelle", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-nav ul li, #zen-resources ul li {
+nav ul li,
+#zen-resources ul li {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+header, .summary {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.summary {
+  color: #EBEBEB;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
