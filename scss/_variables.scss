@@ -1,14 +1,15 @@
 // symantic color names
-$dark-purple:#0F0637;
-$white: #EBEBEB;
-$dark-grey: #272727;
-$blue: #7B8AEC;
-$light-tan: #666666;
+$dark-purple:#0F0637; //horizontal ribbon
+$white: #EBEBEB; //horizontal ribbon
+$dark-grey: #272727; // background
+$blue: #7B8AEC; // pop color
+$light-tan: #666666; // virtical ribbon
 
 $dark-contrast: $dark-purple; // darkest color
 $light-contrast: $white; // lightest color
 $dark-accent: $dark-grey; // middle accent color
 $pop-color: $blue; // color that pops
+$light-accent: $light-tan;
 
 
 

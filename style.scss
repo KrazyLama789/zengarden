@@ -3,10 +3,56 @@
 @use 'scss/organisms';
 @use 'scss/variables';
 
-@media only screen and (min-width:992px) {
-    body {
-        margin: 0;
+body {
+    margin: 0;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: variables.$grid-gap;
+    
+    h3 {
+        @include variables.dark-box;
+        text-align: center;
     }
+    
+    p {
+        padding: 10px;
+    }
+}
+
+.intro {
+    [role=banner], .summary {
+        text-align: center; 
+    }
+}
+
+.sidebar {
+    grid-row: 2/3;
+    text-align: center;
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.main {
+
+}
+
+footer {
+    @include variables.dark-box; //general styling
+    text-align: center;
+}
+
+
+@media only screen and (min-width:992px) {
+    
 
     .page-wrapper {
         display: grid;
@@ -46,14 +92,6 @@
         text-align: center;
         padding: 505px 1em 1em 1em; // Aligns content virtically within the aside.
         margin: -5em 0 -1em 0; // Adjust with pagewraper padding. touches top and bottom.
-
-        ul {
-            padding: 0;
-
-            li {
-                list-style: none;
-            }
-        }
     }
 
     .main {
@@ -99,10 +137,9 @@
     footer {
         // grid-row-end: 1;
         display: flex;
-        justify-content: center;
-        @include variables.dark-box; //general styling
         grid-column: 1/7;
         z-index: 1;
+        justify-content: center;
     }
 
 //     header,
