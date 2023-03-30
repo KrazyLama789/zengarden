@@ -186,13 +186,18 @@ nav ul li,
   padding-bottom: 1rem;
 }
 
+/*========ACCESSIBILITY FOR SMALL VIEWS========*/
 header, .summary {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .summary {
   color: #EBEBEB;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.main h3 {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

@@ -247,12 +247,16 @@ nav ul li,
 /*========ACCESSIBILITY FOR SMALL VIEWS========*/
 
 header, .summary {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
 }
 
 .summary {
     color: variables.$white;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.main h3 {
+    text-align: right;
 }
