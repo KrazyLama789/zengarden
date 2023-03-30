@@ -9,3 +9,52 @@ $dark-contrast: $dark-purple; // darkest color
 $light-contrast: $white; // lightest color
 $dark-accent: $dark-grey; // middle accent color
 $pop-color: $blue; // color that pops
+
+
+
+// Mixins
+@import url("https://use.typekit.net/pir7ghc.css");
+
+@mixin primary-font {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+};
+
+@mixin secondary-font {
+    font-family: "adelle", serif;
+    font-weight: 400;
+    font-style: normal;
+};
+
+//Row stylings
+$text-padding: 2%;
+$text-padding-left: 40% + $text-padding; //To keep the text on the left of the aside
+$grid-gap: 2em;
+@mixin right-row-style {
+    grid-column: 2/7;
+    background-color: white;
+    color: black;
+    padding: $text-padding $text-padding-left $text-padding 5%;
+    margin-left: -5%;
+
+}
+
+@mixin dark-box {
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: $text-padding;
+}
+
+@mixin left-row-style {
+    @include dark-box;
+    grid-column: 1/6;
+    padding: $text-padding 26% $text-padding 20%;
+    margin-right: -5%;
+}
+
+@mixin h3 {
+    @include dark-box;
+    margin-left: -100%;
+}
