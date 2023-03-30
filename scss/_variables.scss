@@ -35,7 +35,7 @@ $grid-gap: 2em;
 @mixin right-row-style {
     grid-column: 2/7;
     background-color: white;
-    color: black;
+    color: $dark-purple;
     padding: $text-padding $text-padding-left $text-padding 5%;
     margin-left: -5%;
 
@@ -43,7 +43,7 @@ $grid-gap: 2em;
 
 @mixin dark-box {
     z-index: 2;
-    background-color: black;
+    background-color: $dark-purple;
     color: white;
     padding: $text-padding;
 }
