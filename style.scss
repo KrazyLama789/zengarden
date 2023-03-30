@@ -3,17 +3,69 @@
 @use 'scss/organisms';
 @use 'scss/variables';
 
-@media only screen and (min-width:992px) {
-    body {
+body {
+    margin: 0;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: variables.$grid-gap;
+    padding: variables.$grid-gap 0 variables.$grid-gap/2 0;
+    // Add backgroud color here
+    
+    h3 {
+        @include variables.dark-box;
+        text-align: center;
         margin: 0;
     }
+    
+    p {
+        padding:0 10px 10px;
+    }
+}
+
+.intro {
+    [role=banner], .summary {
+        text-align: center; 
+    }
+}
+
+.sidebar {
+    grid-row: 2/3;
+    text-align: center;
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+[role=article]:not(.summary) {
+    // add color here
+}
+
+footer {
+    @include variables.dark-box; //general styling
+    text-align: center;
+}
+
+
+@media only screen and (min-width:992px) {
+    
 
     .page-wrapper {
-        display: grid;
         grid-template-columns: repeat(6, 2fr);
         grid-row-gap: variables.$grid-gap;
         background-color: darkgrey;
         padding: 5em 0 1em 0;
+        
+        p {
+            padding-right: 0;
+        }
     }
 
     .intro {
@@ -48,14 +100,6 @@
         text-align: center;
         padding: 505px 1em 1em 1em; // Aligns content virtically within the aside.
         margin: -5em 0 -1em 0; // Adjust with pagewraper padding. touches top and bottom.
-
-        ul {
-            padding: 0;
-
-            li {
-                list-style: none;
-            }
-        }
     }
 
     .main {
@@ -71,7 +115,6 @@
 
             h3 {
                 @include variables.h3; // General styling.
-                background-color: variables.$dark-purple;
             }
         }
     }
@@ -102,10 +145,9 @@
     footer {
         // grid-row-end: 1;
         display: flex;
-        justify-content: center;
-        @include variables.dark-box; //general styling
         grid-column: 1/7;
         z-index: 1;
+        justify-content: center;
     }
 
     //     header,
