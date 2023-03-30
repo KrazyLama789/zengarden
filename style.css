@@ -7,6 +7,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 2em;
+  padding: 2em 0 1em 0;
 }
 .page-wrapper h3 {
   z-index: 2;
@@ -14,9 +15,10 @@ body {
   color: white;
   padding: 2%;
   text-align: center;
+  margin: 0;
 }
 .page-wrapper p {
-  padding: 10px;
+  padding: 0 10px 10px;
 }
 
 .intro [role=banner], .intro .summary {
@@ -44,11 +46,13 @@ footer {
 
 @media only screen and (min-width: 992px) {
   .page-wrapper {
-    display: grid;
     grid-template-columns: repeat(6, 2fr);
     grid-row-gap: 2em;
     background-color: darkgrey;
     padding: 5em 0 1em 0;
+  }
+  .page-wrapper p {
+    padding-right: 0;
   }
   .intro {
     grid-column: 1/7;
@@ -115,6 +119,7 @@ footer {
     color: white;
     padding: 2%;
     margin-left: -100%;
+    text-align: right;
   }
   footer {
     display: flex;

@@ -11,14 +11,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: variables.$grid-gap;
+    padding: variables.$grid-gap 0 variables.$grid-gap/2 0;
+    // Add backgroud color here
     
     h3 {
         @include variables.dark-box;
         text-align: center;
+        margin: 0;
     }
     
     p {
-        padding: 10px;
+        padding:0 10px 10px;
     }
 }
 
@@ -41,8 +44,8 @@ body {
     }
 }
 
-.main {
-
+[role=article]:not(.summary) {
+    // add color here
 }
 
 footer {
@@ -55,11 +58,14 @@ footer {
     
 
     .page-wrapper {
-        display: grid;
         grid-template-columns: repeat(6, 2fr);
         grid-row-gap: variables.$grid-gap;
         background-color: darkgrey;
         padding: 5em 0 1em 0;
+        
+        p {
+            padding-right: 0;
+        }
     }
 
     .intro {
@@ -68,16 +74,19 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-row-gap: variables.$grid-gap;
+
         [role=banner] {
             @include variables.right-row-style;
             grid-row: 1/2;
             text-align: right;
         }
+
         .summary {
             grid-row: 2/3;
             text-align: right;
             @include variables.left-row-style;
         }
+
         .preamble {
             grid-row: 3/4;
             @include variables.right-row-style;
@@ -107,6 +116,7 @@ footer {
     
             h3 {
                 @include variables.h3; // General styling.
+                text-align: right;
             }
         }
     }
