@@ -24,10 +24,6 @@ body {
     padding: 0 10px 10px;
   }
 
-  a {
-    color: variables.$pop-color;
-  }
-
   [role="article"]:not(.summary) {
     @include variables.light-box;
   }
@@ -57,12 +53,12 @@ body {
 
     li {
       list-style: none;
-      color: variables.$light-contrast
+      color: variables.$dark-accent;
     }
   }
 
   a {
-    color: variables.$pop-color;
+    color: variables.$dark-contrast;
   }
 }
 

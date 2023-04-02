@@ -1,9 +1,9 @@
 // symantic color names
-$dark-purple:#0F0637; //horizontal ribbon
+$dark-purple:#180b55; //horizontal ribbon
 $white: #EBEBEB; //horizontal ribbon
-$dark-grey: #272727; // background
-$blue: #7B8AEC; // pop color
-$light-tan: #666666; // virtical ribbon
+$dark-grey: #2e2e2f; // background
+$blue: #7081eb; // pop color
+$light-tan: #919195; // virtical ribbon
 
 $dark-contrast: $dark-purple; // darkest color
 $light-contrast: $white; // lightest color
@@ -35,7 +35,10 @@ $grid-gap: 2em;
 
 @mixin light-box {
     background-color: $light-contrast;
-    color: $dark-purple;
+    color: $dark-grey;
+    a {
+        color: $dark-contrast;
+    }
 }
 
 @mixin right-row-style {
@@ -51,6 +54,9 @@ $grid-gap: 2em;
     background-color: $dark-purple;
     color: $light-contrast;
     padding: $text-padding;
+    a {
+        color:$pop-color;
+    }
 }
 
 @mixin left-row-style {
