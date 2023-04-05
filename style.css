@@ -83,6 +83,7 @@ footer a {
   color: #7081eb;
 }
 
+/*---- Large Screen ----*/
 @media only screen and (min-width: 992px) {
   .page-wrapper {
     grid-template-columns: repeat(6, 2fr);
